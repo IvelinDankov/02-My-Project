@@ -1,0 +1,42 @@
+.page-section {
+  padding-top: 6rem;
+  display: flex;
+  justify-content: center;
+}
+.page-wrapper {
+  width: 65rem;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 2.4rem;
+  row-gap: 2.4rem;
+  flex-wrap: wrap;
+}
+.link-wrapper {
+  flex: 1;
+}
+.link-wrapper * {
+  display: inline-block;
+  text-align: center;
+}
+.link-wrapper a {
+  background-color: var(--search-bg-color);
+  color: var(--btn-bg-color);
+  text-decoration: none;
+  font-size: 1.8rem;
+  width: calc(65rem / 3.5);
+  padding: 3.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1rem;
+}
+
+.link-wrapper svg {
+  fill: var(--btn-bg-color);
+  width: 4rem;
+  height: 4rem;
+}
+
+.main-section {
+  padding-top: 4rem;
+}
