@@ -1,0 +1,45 @@
+
+.section-post {
+  background-color: var(--bg-color);
+}
+
+.post-wrapper {
+  max-width: 80rem;
+  margin-inline: auto;
+}
+
+.secondary-heading-card {
+    background-color: var(--btn-bg-color);
+    color: var(--white-color);
+}
+
+.post-heading {
+  font-size: 3.6rem;
+  color: var(--white-color);
+  margin-block: 1rem;
+}
+
+.post-img-wrapper {
+
+    margin-block: 3.2rem;
+    display: block;
+}
+
+.post-image {
+    border-radius: 1.2rem;
+    display: block;
+    object-fit: cover;
+}
+
+.post-text-heading {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: var(--white-color);
+    margin-bottom: 2.4rem;
+}
+
+.post-text {
+    color: var(--post-text);
+    font-size: 2rem;
+    line-height: 32px;
+}
