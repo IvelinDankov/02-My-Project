@@ -17,6 +17,7 @@
 }
 
 .login-heading {
+  font-family: "Work sans", sans-serif;
   color: var(--white-color);
 }
 
@@ -43,11 +44,17 @@
   color: var(--white);
   width: 100%;
   padding: 1.3rem 2.6rem;
-  background-color: var(--btn-bg-color);
+  background-color: var(--btn-color);
+  border-radius: 0.8rem;
 
   text-decoration: none;
   cursor: pointer;
   border: none;
+  transition: 0.3s ease-in-out;
+}
+
+.login-form button:hover {
+  background-color: #0a8560;
 }
 
 .login {
@@ -59,6 +66,7 @@
 .login a:link {
   color: var(--btn-bg-color);
   text-decoration: none;
+  border-radius: 0.8rem;
 }
 .login a:hover,
 .login a:active {

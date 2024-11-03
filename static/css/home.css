@@ -8,15 +8,26 @@
   --gray-secondary: #52525b;
   --adv-color: #696a75;
   --footer-small-text: #97989f;
-  --post-text: #BABABF;
+  --post-text: #bababf;
 
   --font-color: #d9d9d9;
   --btn-bg-color: #4b6bfb;
+  --btn-color: #0ca678;
   --btn-bg-color-card: #4b6bfb0d;
 
- --nl-stroke:  #3B3C4A;
+  --nl-stroke: #3b3c4a;
 
   --white-color: #fff;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("/static/fonts/Work_Sans/WorkSans-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Source Serif";
+  src: url("/static/fonts/Source_Serif_4/SourceSerif4-VariableFont_opsz\,wght.ttf");
 }
 
 * {
@@ -31,6 +42,7 @@ html {
 
 body {
   font-size: 1.6rem;
+  font-family: "Source Serif", sans-serif;
 }
 
 header {
@@ -81,6 +93,12 @@ nav {
   text-decoration: none;
   font-size: 2rem;
   font-weight: 500;
+  transition: all 0.5s ease;
+}
+
+.item a:hover,
+.item a:active {
+  color: #0ca678;
 }
 
 #form {
@@ -142,6 +160,7 @@ footer {
 }
 
 .secondary-heading {
+  font-family: "Work sans", sans-serif;
   background-color: var(--btn-bg-color);
   display: inline-block;
   padding: 0.8rem 2rem;
@@ -150,6 +169,7 @@ footer {
 }
 
 .main-heading {
+  font-family: "Work sans", sans-serif;
   font-size: 3.6rem;
   font-weight: bold;
   margin-bottom: 2.4rem;
@@ -205,6 +225,7 @@ footer {
 }
 
 .secondary-heading-card {
+  font-family: "Work sans", sans-serif;
   background-color: var(--btn-bg-color-card);
   color: #4b6bfb;
 }
@@ -212,6 +233,7 @@ footer {
   padding: 0.8rem;
 }
 .heading-therthery {
+  font-family: "Work sans", sans-serif;
   padding: 1.6rem 0 2rem 0;
   font-size: 2.4rem;
   color: var(--white-color);
@@ -242,6 +264,7 @@ footer {
 }
 
 .footer-heading {
+  font-family: "Work sans", sans-serif;
   color: var(--white-color);
   margin-bottom: 1.2rem;
 }
@@ -251,12 +274,20 @@ footer {
   line-height: 1.6;
 }
 
-address a {
+address a:link,
+address a:visited {
   /* TODO: Make link and hover effects */
   color: inherit;
   display: inline-block;
   text-decoration: none;
+
   font-style: normal;
+  transition: all 0.3s ease-in-out;
+}
+
+address a:hover,
+address a:active {
+  color: #0ca678;
 }
 
 address span {
@@ -279,11 +310,15 @@ address span {
 .footer-items li {
   margin: 1rem 0;
 }
-.footer-items li a {
+.footer-items li a:link,
+.footer-items li a:visited {
   text-decoration: none;
   color: inherit;
+  transition: 0.5s ease-in-out;
 }
-.footer-items li a:hover {
+.footer-items li a:hover,
+.footer-items li a:active {
+  color: #0ca678;
   border-bottom: 0.05rem solid currentColor;
 }
 
@@ -296,6 +331,7 @@ address span {
 
 .newsletter-subheading {
   margin-bottom: 2rem;
+  font-family: "Work sans", sans-serif;
 }
 
 .news-form label {
@@ -312,7 +348,7 @@ address span {
   margin-bottom: 0.8rem;
   border: none;
 }
-.news-form img{
+.news-form img {
   position: absolute;
   top: 0;
   right: 1.3rem;
@@ -323,9 +359,14 @@ address span {
   width: 100%;
   padding: 1.2rem 1.4rem;
   border-radius: 5px;
-  background-color: var(--btn-bg-color);
+  background-color: var(--btn-color);
   cursor: pointer;
   border: none;
+  transition: all 0.4s ease;
+}
+
+.newsletter-btn:hover {
+  background-color: #0a8560;
 }
 
 .main-footer-container {
@@ -341,7 +382,7 @@ address span {
 
 .logo-text {
   color: var(--white-color);
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 .main-footer-container .footer-items {

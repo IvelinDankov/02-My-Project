@@ -9,6 +9,7 @@
   margin-inline: auto;
 }
 .contact-heading {
+  font-family: "Work sans", sans-serif;
   font-size: 4.5rem;
   color: var(--white-color);
   text-align: center;
@@ -47,12 +48,18 @@
 .contact-btn {
   display: inline-block;
   padding: 1.3rem 2.6rem;
-  background-color: var(--btn-bg-color);
+  background-color: var(--btn-color);
   color: var(--white);
+  border-radius: 0.8rem;
+  transition: all 0.3s ease-in-out;
   text-decoration: none;
   cursor: pointer;
   border: none;
   /* border-radius: 1.3rem; */
+}
+
+.contact-btn:hover {
+  background-color: #0a8560;
 }
 
 .more-info-box {
@@ -73,5 +80,6 @@ address {
 }
 
 .social-heading {
+  font-family: "Work sans", sans-serif;
   margin-bottom: 2rem;
 }

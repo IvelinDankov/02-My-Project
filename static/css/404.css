@@ -13,6 +13,7 @@
   color: var(--font-color);
 }
 .error-heading {
+  font-family: "Work sans", sans-serif;
   font-size: 8rem;
   font-weight: 800;
 }
@@ -21,11 +22,18 @@
   font-weight: 500;
   margin: 20px 0;
 }
-.error-btn {
+.error-btn:link,
+.error-btn:visited {
   display: inline-block;
   padding: 1.3rem 2.6rem;
-  background-color: var(--btn-bg-color);
+  background-color: var(--btn-color);
   color: var(--white);
   text-decoration: none;
-  border-radius: 1.3rem;
+  border-radius: 0.8rem;
+  transition: 0.3s ease-in-out;
+}
+
+.error-btn:hover,
+.error-btn:active {
+  background-color: #0a8560;
 }

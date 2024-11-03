@@ -17,6 +17,7 @@
 }
 
 .register-heading {
+  font-family: "Work sans", sans-serif;
   color: var(--white-color);
 }
 
@@ -44,10 +45,17 @@
   width: 100%;
   padding: 1.3rem 2.6rem;
   background-color: var(--btn-bg-color);
+  background-color: var(--btn-color);
+  border-radius: 0.8rem;
+  transition: all 0.3s ease-in-out;
 
   text-decoration: none;
   cursor: pointer;
   border: none;
+}
+
+.register-form button:hover {
+  background-color: #0a8560;
 }
 
 .login {
@@ -64,4 +72,12 @@
 .login a:active {
   border-bottom: 0.2px solid currentColor;
   padding-bottom: 0.3px;
+}
+
+/* Create form */
+
+.form-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
