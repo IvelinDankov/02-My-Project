@@ -7,12 +7,9 @@
   width: 68rem;
   border: 0.05px solid var(--search-bg-color);
   padding: 5.2rem;
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column; */
   background-color: var(--footer-color);
   border-radius: 1.2rem;
+  color: var(--post-text);
 }
 
 .create-heading {
@@ -24,5 +21,39 @@
 
 .form-top {
   display: flex;
-  column-gap: 2rem;
+  justify-content: space-between;
+}
+
+.create-form input,
+.create-form select,
+.create-form textarea {
+  font-weight: normal;
+  font-size: 1.4rem;
+  padding: 0.8rem 1.2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  border: none;
+  outline: 1px solid var(--search-bg-color);
+  color: var(--post-text);
+  background-color: var(--search-bg-color);
+}
+
+.create-btn {
+  display: inline-block;
+  color: var(--bg-color);
+  /* width: 100%; */
+  padding: 1.3rem 2.6rem;
+  /* background-color: var(--btn-bg-color); */
+  background-color: var(--btn-color);
+  border-radius: 0.8rem;
+  transition: all 0.3s ease-in-out;
+
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+
+.create-btn:hover {
+  background-color: #0a8560;
 }
